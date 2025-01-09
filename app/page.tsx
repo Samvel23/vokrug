@@ -22,7 +22,11 @@ export default function Home() {
         />
       </Container>
       <TopBar />
+<<<<<<< HEAD
           <Container className="flex-1 p-10">
+=======
+      <Container className="flex-1">
+>>>>>>> 6e0a0e96322eda1107c10afe53075bf9066ce0ce
         <div className="flex flex-col gap-16">
           <ProductGroupList
             title="Междугородное Такси"
@@ -31,29 +35,56 @@ export default function Home() {
                 id: 1,
                 name: "Эконом",
                 imageUrl: vesta.src,
+<<<<<<< HEAD
                 price: 25,
                 items: [{ price: 25 }],
+=======
+                price: 20,
+                items: [{ price: 20 }],
+>>>>>>> 6e0a0e96322eda1107c10afe53075bf9066ce0ce
               },
               {
                 id: 2,
                 name: "Стандарт",
                 imageUrl: rio.src,
+<<<<<<< HEAD
                 price: 30,
                 items: [{ price: 30 }],
+=======
+                price: 25,
+                items: [{ price: 25 }],
+                // Эконом 1км от 20р
+                // Стандарт 1км от 25р
+                // Комфорт 1км от 30р
+                // Комфорт плюс 1км от 35р
+                // Бизнес 1км от 50р
+                // Минивэн 1км от 45р
+                // Премиум 1км от 70р
+>>>>>>> 6e0a0e96322eda1107c10afe53075bf9066ce0ce
               },
               {
                 id: 3,
                 name: "Комфорт",
                 imageUrl: elantra.src,
+<<<<<<< HEAD
                 price: 35,
                 items: [{ price: 35 }],
+=======
+                price: 30,
+                items: [{ price: 30 }],
+>>>>>>> 6e0a0e96322eda1107c10afe53075bf9066ce0ce
               },
               {
                 id: 4,
                 name: "Комфорт +",
                 imageUrl: haval.src,
+<<<<<<< HEAD
                 price: 40,
                 items: [{ price: 40 }],
+=======
+                price: 35,
+                items: [{ price: 35 }],
+>>>>>>> 6e0a0e96322eda1107c10afe53075bf9066ce0ce
               },
               {
                 id: 5,
