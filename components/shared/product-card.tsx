@@ -1,8 +1,7 @@
-import Link from "next/link";
 import React, { useState } from "react";
 import { Title } from "./title";
 import { Button } from "../ui/button";
-import { Plus } from "lucide-react";
+import Image from "next/image";
 
 interface Props {
   id: number;
@@ -62,10 +61,12 @@ export const ProductCard: React.FC<Props> = ({
     <>
       <div className={className} onClick={toggleModal}>
         <div className="flex justify-center p-6 bg-secondary rounded-lg h-auto cursor-pointer sm:h-[260px]">
-          <img
+          <Image
             className="w-full h-auto max-w-full max-h-full"
             src={imageUrl}
             alt={name}
+            width={200}
+            height={200}
           />
         </div>
 
@@ -88,7 +89,13 @@ export const ProductCard: React.FC<Props> = ({
             <h2 className="text-lg font-bold mb-4">{name}</h2>
             {id === 1 ? descriptionArray[0] : descriptionArray[id - 1]}
             <p className="mb-4">Цена: 1км от {price} руб.</p>
-            <img className="w-full h-[200px] mb-4" src={imageUrl} alt={name} />
+            <Image
+              className="w-full h-[200px] mb-4"
+              src={imageUrl}
+              alt={name}
+              width={200}
+              height={200}
+            />
             <div className="flex flex-col gap-2">
               <p>Хотите заказать такси?</p>
               <p className="flex flex-col">

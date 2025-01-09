@@ -3,8 +3,6 @@ import React from "react";
 import { Container } from "./container";
 import Image from "next/image";
 import logo from "../../app/favicon.ico";
-import { Button } from "../ui/button";
-import { User } from "lucide-react";
 interface Props {
   className?: string;
 }

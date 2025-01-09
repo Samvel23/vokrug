@@ -5,10 +5,16 @@ import { Title } from "./title";
 import { cn } from "@/lib/utils";
 import { ProductCard } from "./product-card";
 import { useCategory } from "@/store/category";
-
+interface ProductItem {
+  id: number;
+  name: string;
+  imageUrl: string;
+  items: { price: number }[];
+  price: number;
+}
 interface Props {
   title: string;
-  items: any[];
+  items: ProductItem[];
   listClassName?: string;
   categoryId: number;
   className?: string;
@@ -23,7 +29,7 @@ export const ProductGroupList: React.FC<Props> = ({
 }) => {
   const setActiveCategoryId = useCategory((state) => state.setActiveId);
   const intersectionRef = React.useRef(null);
-  // @ts-ignore
+  // @ts-expect-error: This line is expected to throw a TypeScript error due to type mismatch, but it is safe to ignore in this context.
   const intersection = useIntersection(intersectionRef, {
     threshold: 0.4,
   });
@@ -44,7 +50,7 @@ export const ProductGroupList: React.FC<Props> = ({
           listClassName
         )}
       >
-        {items.map((product, i) => (
+        {items.map((product) => (
           <ProductCard
             key={product.id}
             id={product.id}

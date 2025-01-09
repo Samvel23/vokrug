@@ -1,5 +1,4 @@
 import { Container, Title } from "@/components/shared";
-import { Categories } from "@/components/shared/categories";
 import { ProductGroupList } from "@/components/shared/products-group-list";
 import { TopBar } from "@/components/shared/top-bar";
 import vesta from "./photos/vesta.png";
@@ -9,6 +8,9 @@ import haval from "./photos/haval.png";
 import k5 from "./photos/k5.png";
 import alphard from "./photos/alphard.png";
 import sclasse from "./photos/Sclasse.png";
+import Image from "next/image";
+import telegPic from "./photos/telegram.png";
+import whatsPic from "./photos/whatsapp.png";
 export default function Home() {
   return (
     <>
@@ -20,7 +22,7 @@ export default function Home() {
         />
       </Container>
       <TopBar />
-      <Container className="flex-1">
+          <Container className="flex-1 p-10">
         <div className="flex flex-col gap-16">
           <ProductGroupList
             title="Междугородное Такси"
@@ -29,15 +31,15 @@ export default function Home() {
                 id: 1,
                 name: "Эконом",
                 imageUrl: vesta.src,
-                price: 20,
-                items: [{ price: 20 }],
+                price: 25,
+                items: [{ price: 25 }],
               },
               {
                 id: 2,
                 name: "Стандарт",
                 imageUrl: rio.src,
-                price: 25,
-                items: [{ price: 25 }],
+                price: 30,
+                items: [{ price: 30 }],
                 // Эконом 1км от 20р
                 // Стандарт 1км от 25р
                 // Комфорт 1км от 30р
@@ -50,15 +52,15 @@ export default function Home() {
                 id: 3,
                 name: "Комфорт",
                 imageUrl: elantra.src,
-                price: 30,
-                items: [{ price: 30 }],
+                price: 35,
+                items: [{ price: 35 }],
               },
               {
                 id: 4,
                 name: "Комфорт +",
                 imageUrl: haval.src,
-                price: 35,
-                items: [{ price: 35 }],
+                price: 40,
+                items: [{ price: 40 }],
               },
               {
                 id: 5,
@@ -87,8 +89,8 @@ export default function Home() {
           <div className="flex flex-col gap-16">
             <ProductGroupList title="WhatsApp" items={[]} categoryId={2} />
             <a href="https://wa.me/qr/4U5WQNI6DIRAF1">
-              <img
-                src="https://cdn.pixabay.com/photo/2015/08/03/13/58/whatsapp-873316_1280.png"
+              <Image
+                src={whatsPic}
                 alt="WhatsApp"
                 width={400}
                 height={400}
@@ -98,8 +100,8 @@ export default function Home() {
           <div className="flex flex-col gap-16">
             <ProductGroupList title="Телеграм" items={[]} categoryId={3} />
             <a href="https://t.me/+jByqV6B7vfxjYmUy">
-              <img
-                src="https://cdn.pixabay.com/photo/2020/10/17/13/21/telegram-5662082_1280.png"
+              <Image
+                src={telegPic}
                 alt="Телеграм"
                 width={400}
                 height={400}
