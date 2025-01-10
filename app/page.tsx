@@ -14,9 +14,9 @@ import whatsPic from "./photos/whatsapp.png";
 export default function Home() {
   return (
     <>
-      <Container className="mt-11">
+      <Container className="mt-11 pl-1">
         <Title
-          text="Все Междугородные Такси"
+          text="Категории"
           size="lg"
           className="font-extrabold"
         />

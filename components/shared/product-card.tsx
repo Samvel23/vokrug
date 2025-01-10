@@ -122,6 +122,10 @@ export const ProductCard: React.FC<Props> = ({
                   Телеграм
                 </a>{" "}
                 канал
+                или{" "}
+                <a href="https://wa.me/qr/4U5WQNI6DIRAF1" className="text-green-500">
+                  WhatsApp
+                </a>
               </p>
             </div>
             <Button variant="secondary" className="mt-4" onClick={toggleModal}>
