@@ -19,7 +19,7 @@ export const Header: React.FC<Props> = ({ className }) => {
             className="rounded-full border-2 "
           />
           <div>
-            <h1 className="text-2xl uppercase font-bold">Междугородные Такси Вокруг Света</h1>
+            <h1 className="text-2xl uppercase font-bold">Междугороднее Такси Вокруг Света</h1>
           </div>
         </div>
 

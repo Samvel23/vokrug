@@ -16,16 +16,16 @@ export default function Home() {
     <>
       <Container className="mt-11 pl-1">
         <Title
-          text="Категории"
+          text="Междугороднее Такси"
           size="lg"
           className="font-extrabold"
         />
       </Container>
       <TopBar />
-          <Container className="flex-1 p-10">
+      <Container className="flex-1 p-10">
         <div className="flex flex-col gap-16">
           <ProductGroupList
-            title="Междугородное Такси"
+            title="Трансферы"
             items={[
               {
                 id: 1,
@@ -82,23 +82,13 @@ export default function Home() {
           <div className="flex flex-col gap-16">
             <ProductGroupList title="WhatsApp" items={[]} categoryId={2} />
             <a href="https://wa.me/qr/4U5WQNI6DIRAF1">
-              <Image
-                src={whatsPic}
-                alt="WhatsApp"
-                width={400}
-                height={400}
-              />
+              <Image src={whatsPic} alt="WhatsApp" width={400} height={400} />
             </a>
           </div>
           <div className="flex flex-col gap-16">
             <ProductGroupList title="Телеграм" items={[]} categoryId={3} />
             <a href="https://t.me/+jByqV6B7vfxjYmUy">
-              <Image
-                src={telegPic}
-                alt="Телеграм"
-                width={400}
-                height={400}
-              />
+              <Image src={telegPic} alt="Телеграм" width={400} height={400} />
             </a>
           </div>
           <div className="flex flex-col gap-16">
@@ -115,6 +105,9 @@ export default function Home() {
                 Поездки по ДНР, ЛНР, Крым
               </li>
               <li className="text-2xl md:text-5xl">Поездки в другие страны</li>
+              <li className="text-2xl md:text-5xl">
+                Междугороднее Такси В любую точку мира!
+              </li>
             </ul>
           </div>
           <div></div>
