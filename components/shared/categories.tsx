@@ -7,7 +7,7 @@ interface Props {
   className?: string;
 }
 const cats = [
-  { id: 1, name: "Междугородное Такси" },
+  { id: 1, name: "Трансферы" },
   { id: 2, name: "WhatsApp" },
   { id: 3, name: "Телеграм" },
   { id: 4, name: "О нас" },
